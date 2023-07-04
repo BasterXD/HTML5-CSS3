@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modelo de Caixas</title>
+    <style>
+     
+
+      h1 {
+        /*Alterando o modelo box-level para inline apenas utilizando display: inline;*/
+        background-color: lightgray; /*Caixa Box-level preenche quebrando linhas*/
+        height: 300px;
+        width: 380px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: darkmagenta;
+        border: 3px solid darkmagenta; /*EXEMPLO*/
+        /* posso substituir os 3 borders acima por border: 10px solid cor qualquer*/
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding: 10px 10px 10px 10px; /*EXEMPLO 1*/
+        padding: 10px; /* EXEMPLO 2 Estou dizendo que todos os espaçamentos vao ser iguais*/
+        /*Posso substituir tbm padding seguindo a ordem cronologica para os espaçamentos*/
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        margin-left: 50px; /* para deixar centralizada existe tbm a margin: center; */
+        outline-width: 3px; /* oultine usado para criar uma linha entre a margem e a borda*/
+        outline-style: dashed;
+        outline-color: black;
+      }
+      /*posso alterar o inline tambem para block utilizando comando display: block;
+      tambem tenho a opção de colocar display: inline-block; < podendo fazer alterações como um block! */
+
+      a {
+        border-width: 1px; /*Caixa Inline-level preenche na mesma linha*/
+        border-style: dashed;
+        border-color: blueviolet;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+      }
+       /* Tipos de Caixas Box-level;   Tipos de caixas inline-level
+
+        div                              .span             
+        h1-h6                            .a
+        p                                .code
+        main                             .small
+        header                           .strong
+        nav                              .em
+        article                          .sup - sub
+        aside                            .label
+        footer                           .button
+        form                             .input
+        video                            .select
+
+        
+        */
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>
+      Paragrafos tambem sao exemplos de box-level, mas os
+      <a href="#">Links sao exemplos de caixas inline-level</a> Vamos ver como
+      tudo isso funciona.
+    </p>
+    
+  </body>
+</html>

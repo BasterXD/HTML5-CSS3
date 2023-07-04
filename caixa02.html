@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grouping Tags</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0px;
+      }
+
+      header {
+        width: 600px;
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      nav {
+        background-color: rgb(102, 102, 102);
+        padding: 3px;
+      }
+
+      nav > a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+      }
+
+      nav > a:hover {
+        text-decoration: underline;
+      }
+
+      main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 1px;
+        margin: 1px;
+      }
+
+      article {
+        background-color: #add9ff;
+        padding: 5px;
+      }
+
+      article > h2 {
+        background-color: #41688a;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Meu site</h1>
+      <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+      </nav>
+    </header>
+    <main>
+      <section id="assuntos">
+        <p>Esportes Politica Tecnologia</p>
+      </section>
+      <section id="noticias">
+        <article>
+          <h2>Noticias sobre o Brasil</h2>
+          <aside>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis odit natus necessitatibus, quod rerum corrupti aut
+              suscipit laboriosam eveniet atque, est, animi quis placeat
+              deserunt ipsum nesciunt. Quam, rem fugiat!
+            </h2>
+            <p>Artigo escrito por Caio Souza</p>
+          </aside>
+        </article>
+        <article></article>
+      </section>
+    </main>
+    <footer>
+      <p>Dsenvolvido pelo Baster</p>
+    </footer>
+  </body>
+</html>
